@@ -1,0 +1,10 @@
+# Escape-AWS-Workspace Python requirements
+# install with: python -m pip install -r requirements.txt
+
+keyboard
+
+# Other future requirements to consider:
+# wheel
+# py_win_keyboard_layout
+# pillow
+# pystray
