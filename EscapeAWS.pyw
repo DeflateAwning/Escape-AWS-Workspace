@@ -6,7 +6,7 @@ import time, datetime
 import keyboard
 
 # Create an instance of tkinter window or frame
-win = Tk() # Note: often called "root" in other tutorials
+win = Tk() # Note: often called "root" by convention
 
 # Setting the geometry of window (position and location)
 xCoord = win.winfo_screenwidth() - 420
@@ -25,20 +25,12 @@ def handleClick():
 # add button
 Button(win, text=(" " * 30) + "Exit" + (" " * 30), command=handleClick).pack()
 
-
 def setOnTop():
-	if 7 < datetime.datetime.now().time().hour < 12+5:
-		win.attributes('-topmost', True)
-		print("on top")
+	# if 7 < datetime.datetime.now().time().hour < 12+5: # can be used to only put the button on top during work hours
+	win.attributes('-topmost', True)
+
 	win.after(1000, setOnTop)
 
 win.after(1000, setOnTop)
-
-# Make the window jump above all
-# while 1:
-	
-# 	# same as non-blocking win.mainloop
-# 	win.update_idletasks()
-# 	win.update()
 
 win.mainloop()
