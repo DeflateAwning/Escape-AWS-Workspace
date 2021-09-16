@@ -23,7 +23,7 @@ Instead of using this mediocre piece of software to exit AWS, you can instead:
 * Set Task Manager (in the host OS) to be "Always on top" (in the Options menu), size it small, and keep in in a corner of your screen. To exit AWS, click on Task Manager, and press the Windows key on your keyboard.
 
 ## Limitations/Known Bugs
-* Only works on 1920x1080 screens (hard coded). In the future, update this.
+* Always puts the button on your main monitor.
 * Only tested on Windows. Likely doesn't work on other host operating systems.
 
 Feel free to submit pull requests to make this tool better!

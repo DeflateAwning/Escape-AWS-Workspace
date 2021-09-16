@@ -5,20 +5,13 @@ import time, datetime
 
 import keyboard
 
-#Create an instance of tkinter window or frame
-win = Tk()
+# Create an instance of tkinter window or frame
+win = Tk() # Note: often called "root" in other tutorials
 
 # Setting the geometry of window (position and location)
-#win.geometry("600x350")
-win.geometry("80x30+1500+1055")
-# TODO set location based on screen size
-
-# Create a Label
-#Label(win, text= "!!!!",font=('Helvetica bold', 15)).pack(pady=0)
-
-# Hide the title bar (Linux?)
-# win.wm_attributes('-type', 'splash')
-# win.attributes('-type','splash')
+xCoord = win.winfo_screenwidth() - 420
+yCoord = win.winfo_screenheight() - 25
+win.geometry(f"80x30+{xCoord}+{yCoord}") # str like "80x30+1500+1775"
 
 # eliminate the titlebar
 win.overrideredirect(1)
